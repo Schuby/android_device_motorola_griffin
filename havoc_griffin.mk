@@ -23,13 +23,10 @@ USE_O_MOTO_AUDIOHAL := true
 $(call inherit-product-if-exists, vendor/motorola/mods/mods-vendor.mk)
 $(call inherit-product, device/motorola/griffin/device.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common Havoc stuff.
 $(call inherit-product, vendor/havoc/config/common.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
-# Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
