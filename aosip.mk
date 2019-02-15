@@ -23,6 +23,10 @@ USE_O_MOTO_AUDIOHAL := true
 $(call inherit-product-if-exists, vendor/motorola/mods/mods-vendor.mk)
 $(call inherit-product, device/motorola/griffin/device.mk)
 
+# MotoMods
+USE_MOTO_HEALTHHAL := true
+USE_MOTO_AUDIOHAL := true
+
 # Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
